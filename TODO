@@ -1,0 +1,4 @@
+TODO:
+0.Django
+1.使用libvirt
+2.利用qemu所有(大部分)特性，如果和libvirt不能共存就牺牲libvirt
