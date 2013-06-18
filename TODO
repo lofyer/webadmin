@@ -1,4 +1,6 @@
 TODO:
 0.Django
 1.使用libvirt
-2.利用qemu所有(大部分)特性，如果和libvirt不能共存就牺牲libvirt
+2.利用kvm所有(大部分)特性，如果和libvirt不能共存就牺牲libvirt
+3.驻守程序作为虚拟机和管理的媒介，虚拟机为驻守程序子进程（由于轻量的原因不用vdsm）
+4.Xen什么的就不要了，即使使用了libvirt
