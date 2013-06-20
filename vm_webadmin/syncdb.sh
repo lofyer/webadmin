@@ -4,5 +4,6 @@ then
 	echo -e "need app name\n"
 	exit
 fi
+
 python manage.py sql $1
 python manage.py syncdb 

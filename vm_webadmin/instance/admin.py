@@ -1,7 +1,16 @@
 from django.contrib import admin
-from instance.models import CommonOptions
+from instance.models import VirtualMachine,HardDrive
 
-admin.site.register(CommonOptions)
+class HDInline(admin.StackedInline):
+	model = HardDrive
+	max_num = 10
 
-class vmadmin(admin.ModelAdmin):
-	list_display=('vmname','createdate')
+class VirtualMachineAdmin(admin.ModelAdmin):
+	fieldsets = [
+		('Basic Infomation', {
+			'fields':('vmname', 'createdate', 'useros', 'qemucmd')
+		}),
+	]
+	inlines = [HDInline, ]
+
+admin.site.register(VirtualMachine, VirtualMachineAdmin)
