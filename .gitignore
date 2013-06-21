@@ -1,4 +1,4 @@
-*.tar.gz
+Django-1.5.1.tar.gz
 *.pyc
 database
 a.out
