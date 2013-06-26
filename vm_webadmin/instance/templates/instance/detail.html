@@ -1,0 +1,7 @@
+Virtual Machine Detail
+<h1>{{ showvm.vmname }}</h1>
+<ul>
+{% for VirtualMachine in showvm.choice_set.all %}
+    <li>{{ VirtualMachine.vmname }}</li>
+{% endfor %}
+</ul>

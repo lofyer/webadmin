@@ -13,4 +13,6 @@ class VirtualMachineAdmin(admin.ModelAdmin):
 	]
 	inlines = [HDInline, ]
 
+	list_display = ('vmname', 'createdate', 'useros')
+
 admin.site.register(VirtualMachine, VirtualMachineAdmin)

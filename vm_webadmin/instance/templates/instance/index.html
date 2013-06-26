@@ -1,0 +1,10 @@
+Virtual Machine List
+{% if listvm %}
+    <ul>
+    {% for VirtualMachine in listvm %}
+        <li><a href="/instance/{{ VirtualMachine.id }}/">{{ VirtualMachine.vmname }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No VM are available.</p>
+{% endif %}
