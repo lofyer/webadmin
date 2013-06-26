@@ -8,6 +8,7 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'vm_webadmin.views.home', name='home'),
     # url(r'^vm_webadmin/', include('vm_webadmin.foo.urls')),
+    url(r'^instance/', include('instance.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
