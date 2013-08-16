@@ -12,3 +12,9 @@ def index(request):
 def detail(request, VirtualMachine_id):
 	showvm = get_object_or_404(VirtualMachine, pk=VirtualMachine_id)
 	return render(request, 'instance/detail.html', {'showvm': showvm})
+
+def start(request, VirtualMachine_id):
+
+def stop(request, VirtualMachine_id):
+
+def websocekt(request, VirtualMachine_id):

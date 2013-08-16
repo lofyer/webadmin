@@ -19,7 +19,7 @@ class VirtualMachine(models.Model):
 	)
     	useros = models.CharField("Predefined OS", max_length=255, choices=OS, default=Linux_x64)
 	#qemu command
-	qemucmd = models.CharField("Qemu Command", max_length=255, default='qemu-x86_64-spice')
+	qemucmd = models.CharField("Qemu Command", max_length=255, default='qemu-system-x86_64')
 
 class HardDrive(models.Model):
 	VirtualMachine = models.ForeignKey(VirtualMachine)
