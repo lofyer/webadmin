@@ -4,3 +4,6 @@ TODO:
 2.利用kvm所有(大部分)特性，如果和libvirt不能共存就牺牲libvirt
 3.作为InTheCloud文档的管理终结。
 4.界面使用xadmin
+5.引擎飘逸
+6.分布式存储
+7.无数据库
